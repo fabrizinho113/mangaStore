@@ -1,0 +1,23 @@
+.item-product {
+    float: left;
+    width: 25%;
+    box-shadow: 1px 1px 5px #afafaf47;
+    border: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.item-product img {
+    width: 50%;
+    height: 350px;
+    margin-top: 20px;
+}
+
+.item-product button {
+    padding: 10px 60px;
+}
