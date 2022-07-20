@@ -17,7 +17,7 @@ function NavBar(){
         <Nav.Link href="#bluerays">Blue-rays</Nav.Link>
         <Nav.Link href="#music">Music</Nav.Link>
         <Nav.Link href="#about">About</Nav.Link>
-        <Nav.Link><CartWidget /></Nav.Link>
+        <Nav.Link className="ms-5"><CartWidget /></Nav.Link>
         </Nav>
         </Navbar.Collapse>
         </Container>

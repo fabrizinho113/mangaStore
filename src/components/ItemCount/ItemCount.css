@@ -1,0 +1,17 @@
+.counterProduct{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.counterProduct button{
+    padding: 10px;
+    font-size: 27px;
+    margin: 10px;
+}
+
+.productStock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

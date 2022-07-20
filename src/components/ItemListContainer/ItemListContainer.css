@@ -12,10 +12,12 @@
     margin-left: 100px;
 }
 
-.item-product img {
-    width: 50%;
-    height: 350px;
+.item-product .cover {
+    width: 100%;
+    height: auto;
     margin-top: 20px;
+    max-width: 300px;
+    max-height: 500px;
 }
 
 .item-product button {
