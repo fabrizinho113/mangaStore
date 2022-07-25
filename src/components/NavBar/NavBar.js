@@ -14,9 +14,7 @@ function NavBar(){
         <Nav className="ms-auto">
         <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#manga">Manga</Nav.Link>
-        <Nav.Link href="#bluerays">Blue-rays</Nav.Link>
-        <Nav.Link href="#music">Music</Nav.Link>
-        <Nav.Link href="#about">About</Nav.Link>
+        <Nav.Link href="#lightnovel">Light Novels</Nav.Link>
         <Nav.Link className="ms-5"><CartWidget /></Nav.Link>
         </Nav>
         </Navbar.Collapse>

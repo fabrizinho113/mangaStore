@@ -1,24 +1,33 @@
+import { useState } from 'react';
+import ItemList from '../ItemList/ItemList';
 import './ItemListContainer.css';
-import ItemCount from '../ItemCount/ItemCount';
+import products from '../../utils/productsMock';
 
 
-const ItemListContainer = ({ product }) => {
+const ItemListContainer = () => {
 
-    const {title, image, price} = product;
+    const [listProducts, setListProducts] = useState([]);
 
+    const getProducts = new Promise( (resolve, reject) => {
+        setTimeout( () => {
+            resolve(products)
+        }, 2000)
+    })
+        
+    getProducts
+            .then( (res) => { // Respuesta OK
+                setListProducts(res)
+            })
+            .catch( () => { // Falla la respuesta
+                console.log("la llama fallo")
+            })
 
-    const productsAdded = (itemsToCart) => {
-        console.log('Items added to cart: ', itemsToCart);
-    }
 
     
     return(
-        <div className="item-product">
-            <img src={`/assets/img/${image}`} className="cover" alt="img product" />
-            <h2>{title}</h2>
-            <span>{price} $ ARS</span>
-            <ItemCount stock={10} initial={1} onAdd={productsAdded}/>
-        </div> 
+        <div className='list-products'>
+            <ItemList dataProducts={listProducts}/>
+        </div>
     )
 }
 

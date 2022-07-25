@@ -11,7 +11,7 @@ function ItemCount({ stock, initial, onAdd }){
     }
 
     const removeProduct = () => {
-        productCounter > 1 ? setProductCounter( productCounter - 1) : console.log(`You can't do that!`);
+        productCounter > initial ? setProductCounter( productCounter - 1) : console.log(`You can't do that!`);
     }
 
     const addToCart = () => {
