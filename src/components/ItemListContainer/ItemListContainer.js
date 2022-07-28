@@ -15,11 +15,11 @@ const ItemListContainer = () => {
     })
         
     getProducts
-            .then( (res) => { // Respuesta OK
+            .then( (res) => { 
                 setListProducts(res)
             })
-            .catch( () => { // Falla la respuesta
-                console.log("la llama fallo")
+            .catch( () => {
+                console.log("Error")
             })
 
 

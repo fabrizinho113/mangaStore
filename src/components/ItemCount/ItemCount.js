@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import './ItemCount.css';
+import AddIcon from '@mui/icons-material/Add';
+import { Remove } from '@mui/icons-material';
+
 
 function ItemCount({ stock, initial, onAdd }){
 
@@ -26,11 +29,11 @@ function ItemCount({ stock, initial, onAdd }){
         <div className='productStock'>
                 <p>Stock: {productStock}</p>
                 <div className='counterProduct'>
-                    <button onClick={removeProduct}>-</button>
+                    <Remove className="minus" onClick={removeProduct} />
                     <p>{productCounter}</p>
-                    <button onClick={addProduct}>+</button>
+                    <AddIcon className="plus" onClick={addProduct} />
                 </div>
-                <button onClick={addToCart}>Add to Cart</button>
+                <button className="button-cart" onClick={addToCart}>Add to Cart</button>
         </div>
     )
 }

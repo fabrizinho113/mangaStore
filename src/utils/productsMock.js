@@ -31,25 +31,25 @@ const products = [
     },
     {
         id: 6,
-        title: 'Initial D',
+        title: 'JoJo Bizzare Adventures: Stell Ball Run',
         price: 500,
         image: 'Gantz.png',
     },
     {
         id: 7,
-        title: 'Gantz',
+        title: 'Classroom of the Elite',
         price: 500,
         image: 'Gantz.png',
     },
     {
         id: 8,
-        title: 'Gantz',
+        title: 'Fairy Tail',
         price: 500,
         image: 'Gantz.png',
     },
     {
         id: 9,
-        title: 'Gantz',
+        title: 'Shingeki no Kyojin',
         price: 500,
         image: 'Gantz.png',
     }
