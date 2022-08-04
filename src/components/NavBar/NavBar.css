@@ -5,6 +5,40 @@
 
 .title{
     font-family: 'Mangat', sans-serif;
+    font-size: 40px;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(32, 32, 32);
+}
+
+.navbar h3{
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li button{
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
 }
 
 .logo{

@@ -1,25 +1,23 @@
 import React from "react";
-import { Container, Navbar, Nav } from 'react-bootstrap';
-import "../NavBar/NavBar.css";
+import "./NavBar.css";
 import CartWidget from "../CartWidget/CartWidget";
+import { Link} from 'react-router-dom';
+
+
 
 function NavBar(){
      return(
         <header>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Container>
-        <Navbar.Brand className="title" href="#home" ><img src='/assets/img/nav-icon.png' className="logo" alt="saitama logo"></img>Manga Store</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="ms-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#manga">Manga</Nav.Link>
-        <Nav.Link href="#lightnovel">Light Novels</Nav.Link>
-        <Nav.Link className="ms-5"><CartWidget /></Nav.Link>
-        </Nav>
-        </Navbar.Collapse>
-        </Container>
-        </Navbar>
+        <div className="navbar">
+            <Link to="/"><img src='/assets/img/nav-icon.png' className="logo" alt="saitama logo" /></Link>
+            <h3 className="title">Manga Store</h3>
+            <ul>
+                <li><Link to="/"><button>Home</button></Link></li>
+                <li><Link to="/category/mangas"><button>Manga</button></Link></li>
+                <li><Link to="/category/lightnovels"><button>Light Novels</button></Link></li>
+                <li><Link className="cart" to="/cart"><CartWidget /></Link></li>
+            </ul>   
+        </div>
         </header>
     )
 }
