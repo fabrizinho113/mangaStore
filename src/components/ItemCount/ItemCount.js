@@ -4,17 +4,19 @@ import AddIcon from '@mui/icons-material/Add';
 import { Remove } from '@mui/icons-material';
 
 
-function ItemCount({ stock, initial, onAdd }){
+function ItemCount({ stock, onAdd,  productData }){
 
-    const [productCounter, setProductCounter] = useState(initial);
+    const [productCounter, setProductCounter] = useState(1);
     const [productStock, setProductStock] = useState(stock);
 
-    const addProduct = () => {
-        productStock > productCounter ? setProductCounter( productCounter + 1) : console.log(`This product doesn't have any stock at the moment`);
+    const addItem = (e) => {
+        productCounter < productStock ? setProductCounter( productCounter + 1) : console.log(`This product doesn't have any stock at the moment`);
+        e.stopPropagation();
     }
 
-    const removeProduct = () => {
-        productCounter > initial ? setProductCounter( productCounter - 1) : console.log(`You can't do that!`);
+    const removeItem = (e) => {
+        productCounter > 1 ? setProductCounter( productCounter - 1) : console.log(`You can't do that!`);
+        e.stopPropagation();
     }
 
     const addToCart = () => {
@@ -22,18 +24,20 @@ function ItemCount({ stock, initial, onAdd }){
             onAdd(productCounter);
             setProductStock(productStock - productCounter);
             setProductCounter(1);
-        } else console.log("Out of stock");
+        } else console.log("Items cannot be added to cart... out of stock");
     }
 
     return (
         <div className='productStock'>
                 <p>Stock: {productStock}</p>
                 <div className='counterProduct'>
-                    <Remove className="minus" onClick={removeProduct} />
+                    <Remove className="minus" onClick={removeItem} />
                     <p>{productCounter}</p>
-                    <AddIcon className="plus" onClick={addProduct} />
+                    <AddIcon className="plus" onClick={addItem} />
                 </div>
+                
                 <button className="button-cart" onClick={addToCart}>Add to Cart</button>
+                
         </div>
     )
 }

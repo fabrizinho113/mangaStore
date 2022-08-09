@@ -5,6 +5,7 @@ const products = [
         category: 'mangas',
         price: 500,
         image: 'chainsaw-man.png',
+        stock: 10,
         description: 'Manga one'
     },
     {
@@ -13,6 +14,7 @@ const products = [
         category: 'mangas',
         price: 700,
         image: 'Berserk.png',
+        stock: 10,
         description: 'Manga two'
     },
     {
@@ -21,6 +23,7 @@ const products = [
         category: 'mangas',
         price: 500,
         image: 'Gantz.png',
+        stock: 10,
         description: 'Manga three'
     },
     {
@@ -29,6 +32,7 @@ const products = [
         category: 'mangas',
         price: 500,
         image: 'kaguya-sama.png',
+        stock: 10,
         description: 'Manga four'
     },
     {
@@ -37,6 +41,7 @@ const products = [
         category: 'mangas',
         price: 500,
         image: 'dragon-ball-super.png',
+        stock: 10,
         description: 'Manga five'
     },
     {
@@ -45,6 +50,7 @@ const products = [
         category: 'mangas',
         price: 500,
         image: 'jojo.png',
+        stock: 10,
         description: 'Manga six'
     },
     {
@@ -53,6 +59,7 @@ const products = [
         category: 'mangas',
         price: 500,
         image: 'classroom-of-the-elite.png',
+        stock: 10,
         description: 'Manga seven'
     },
     {
@@ -61,6 +68,7 @@ const products = [
         category: 'mangas',
         price: 500,
         image: 'fairy-tail.png',
+        stock: 10,
         description: 'Manga eight'
     },
     {
@@ -69,6 +77,7 @@ const products = [
         category: 'mangas',
         price: 500,
         image: 'shingeki-no-kyojin.png',
+        stock: 10,
         description: 'Manga nine'
     },
     {
@@ -77,6 +86,7 @@ const products = [
         category: 'mangas',
         price: 500,
         image: 'hajime-no-ippo.png',
+        stock: 10,
         description: 'Manga nine'
     },
     {
@@ -85,6 +95,7 @@ const products = [
         category: 'mangas',
         price: 500,
         image: 'hajime-no-ippo.png',
+        stock: 10,
         description: 'Manga nine'
     },
     {
@@ -93,6 +104,7 @@ const products = [
         category: 'mangas',
         price: 500,
         image: 'hajime-no-ippo.png',
+        stock: 10,
         description: 'Manga nine'
     },
     {
@@ -101,6 +113,7 @@ const products = [
         category: 'lightnovels',
         price: 500,
         image: 'hajime-no-ippo.png',
+        stock: 10,
         description: 'Manga nine'
     },
     {
@@ -109,6 +122,7 @@ const products = [
         category: 'lightnovels',
         price: 500,
         image: 'hajime-no-ippo.png',
+        stock: 10,
         description: 'Manga nine'
     },
     {
@@ -117,6 +131,7 @@ const products = [
         category: 'lightnovels',
         price: 500,
         image: 'hajime-no-ippo.png',
+        stock: 10,
         description: 'Manga nine'
     },
     {
@@ -125,6 +140,7 @@ const products = [
         category: 'lightnovels',
         price: 500,
         image: 'hajime-no-ippo.png',
+        stock: 10,
         description: 'Manga nine'
     },
     {
@@ -133,6 +149,7 @@ const products = [
         category: 'lightnovels',
         price: 500,
         image: 'hajime-no-ippo.png',
+        stock: 10,
         description: 'Manga nine'
     }
 ]

@@ -7,11 +7,13 @@ import Footer from './components/Footer/Footer';
 import Detail from './pages/Detail';
 import Error from './pages/Error';
 import Checkout from './pages/Checkout';
+import CartProvider from './context/CartContext';
 
 
 function App() {
 
   return (
+    <CartProvider>
     <BrowserRouter>
       <div className="App">
         <NavBar />
@@ -25,6 +27,7 @@ function App() {
       </div>
     <Footer />
     </BrowserRouter>
+    </CartProvider>
   );
 }
 
