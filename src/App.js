@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Footer from './components/Footer/Footer';
 import Detail from './pages/Detail';
 import Error from './pages/Error';
-import Checkout from './pages/Checkout';
+import Checkout from './pages/Cart';
 import CartProvider from './context/CartContext';
 
 
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={ <Home />}/>
           <Route path="/category/:categoryId" element={ <ItemListContainer /> }/>
-          <Route path="/cart" element={<Checkout/>}/>
+          <Route path="/cart" element={<Checkout />}/>
           <Route path="/:category/:id" element={<Detail />}/>
           <Route path="*" element={ <Error />}/>
         </Routes>

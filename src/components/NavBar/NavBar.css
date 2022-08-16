@@ -6,6 +6,8 @@
 .title{
     font-family: 'Mangat', sans-serif;
     font-size: 40px;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
 }
 
 .navbar{
@@ -25,6 +27,7 @@
 .navbar ul {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .navbar ul li {

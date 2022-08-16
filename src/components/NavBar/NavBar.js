@@ -9,6 +9,8 @@ import { CartContext } from "../../context/CartContext";
 function NavBar(){
 
     const { products } = useContext(CartContext);
+
+    
     
      return(
         <header>
@@ -23,6 +25,7 @@ function NavBar(){
             </ul>   
         </div>
         </header>
+        
     )
 }
 
