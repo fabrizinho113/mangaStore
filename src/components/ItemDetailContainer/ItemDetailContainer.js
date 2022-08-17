@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
-import products from "../../utils/productsMock"
-import ItemDetail from "../ItemDetail/ItemDetail"
+import { doc, getDoc, collection } from "firebase/firestore";
+import db from "../../firebase/firebase";
+import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
 
@@ -9,31 +10,17 @@ const ItemDetailContainer = () => {
 
     const {id} = useParams();
 
-    const filterById = () => {
-        products.some( (product) => {
-            if(product.id == id) {
-                setItem(product) 
-            }
-        }
-    )
-    }
+    useEffect( () => {
+        const productsCollection = collection(db, 'products');
+        const referenceDoc = doc(productsCollection, id);
+        getDoc(referenceDoc)
+        .then( result => {
+            const product = result.data();
+            product.id = result.id;
+            setItem(product);
+        })
+    }, []);
 
-    const getItem = new Promise( (resolve, reject) => {
-        setTimeout( () => {
-            resolve(filterById)
-        }, 2000)    
-    })
-
-    useEffect(() => {
-
-        getItem
-            .then( (res) => { 
-                setItem(res);
-            })
-            .catch( (error) => {
-                console.log("Error");
-            })
-    }, [id]);
 
     return(
         <>
