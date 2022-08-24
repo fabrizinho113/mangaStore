@@ -94,7 +94,7 @@ const products = [
         title: 'One Punch Man',
         category: 'mangas',
         price: 500,
-        image: 'hajime-no-ippo.png',
+        image: 'one-punch-man.png',
         stock: 10,
         description: 'Manga nine'
     },
@@ -103,7 +103,7 @@ const products = [
         title: 'Spy x Family',
         category: 'mangas',
         price: 500,
-        image: 'hajime-no-ippo.png',
+        image: 'spy-x-family.png',
         stock: 10,
         description: 'Manga nine'
     },
@@ -112,7 +112,7 @@ const products = [
         title: 'Overlord',
         category: 'lightnovels',
         price: 500,
-        image: 'hajime-no-ippo.png',
+        image: 'overlord.png',
         stock: 10,
         description: 'Manga nine'
     },
@@ -121,7 +121,7 @@ const products = [
         title: 'Konosuba',
         category: 'lightnovels',
         price: 500,
-        image: 'hajime-no-ippo.png',
+        image: 'konosuba.png',
         stock: 10,
         description: 'Manga nine'
     },
@@ -130,7 +130,7 @@ const products = [
         title: 'Steins Gate',
         category: 'lightnovels',
         price: 500,
-        image: 'hajime-no-ippo.png',
+        image: 'steins-gate.png',
         stock: 10,
         description: 'Manga nine'
     },
@@ -139,7 +139,7 @@ const products = [
         title: 'Bongou Stray Dogs',
         category: 'lightnovels',
         price: 500,
-        image: 'hajime-no-ippo.png',
+        image: 'bungou-stray-dogs.png',
         stock: 10,
         description: 'Manga nine'
     },
@@ -148,7 +148,7 @@ const products = [
         title: 'Steins Gate',
         category: 'lightnovels',
         price: 500,
-        image: 'hajime-no-ippo.png',
+        image: 'steins-gate.png',
         stock: 10,
         description: 'Manga nine'
     }

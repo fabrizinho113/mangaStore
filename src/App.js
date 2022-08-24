@@ -16,6 +16,7 @@ function App() {
     <CartProvider>
     <BrowserRouter>
       <div className="App">
+      <div className="contentWrap">
         <NavBar />
         <Routes>
           <Route path="/" element={ <Home />}/>
@@ -24,8 +25,9 @@ function App() {
           <Route path="/:category/:id" element={<Detail />}/>
           <Route path="*" element={ <Error />}/>
         </Routes>
-      </div>
+    </div>
     <Footer />
+    </div>
     </BrowserRouter>
     </CartProvider>
   );
