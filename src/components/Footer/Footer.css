@@ -1,9 +1,35 @@
 .footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-top: auto;
     width: 100%;
     height: auto;
     min-height: 200px;
-    background: rgb(51, 51, 99);
+    background-color: rgb(75, 75, 75);
+    color: #fff;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 20px;
+    margin-left: 22%;
+    border-right: 2px solid #fff;
+    border-right-width: thin;
+}
+
+.icons a{
+    all: unset;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.textContent{
+    display: flex;
+    flex-direction: row;
+    height: 88px;
+    border-right: 2px solid #fff;
+    border-right-width: thin;
+    padding: 10px 20px;
 }

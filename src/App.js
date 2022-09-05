@@ -2,6 +2,7 @@ import './App.css';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import NavBar from './components/NavBar/NavBar';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { ToastContainer} from 'react-toastify';
 import Home from './pages/Home';
 import Footer from './components/Footer/Footer';
 import Detail from './pages/Detail';
@@ -28,6 +29,7 @@ function App() {
     </div>
     <Footer />
     </div>
+    <ToastContainer />
     </BrowserRouter>
     </CartProvider>
   );

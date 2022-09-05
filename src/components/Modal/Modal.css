@@ -1,17 +1,31 @@
-modal-custom {
-    position: fixed;
+.modal-bg{
+    filter:blur(2px);
+  position: absolute;
+  top: 0;
+    left: 0;
+  width:100vw;
+  height:100vh;
+  z-index: 1;
+  background-image: url(../../../public/assets/img/modal-bg.png);
+  background-position: center center;
+}
+
+
+.modal-custom {
+    position: absolute;
     z-index: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
-    width: 90vw;
-    height: 90vh;
+    background: #fff;
+    width: 800px;
+    height: 800px;
     box-shadow: 1px 5px 5px #00000047;
     border-radius: 5px;
     padding: 20px;
     overflow: hidden;
 }
+
 .modal-custom svg {
     position: absolute;
     right: 10px;

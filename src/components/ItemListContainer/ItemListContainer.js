@@ -4,6 +4,7 @@ import ItemList from '../ItemList/ItemList';
 import './ItemListContainer.css';
 import { collection, getDocs, query, where } from "firebase/firestore";
 import db from "../../firebase/firebase";
+import { PacmanLoader } from 'react-spinners';
 
 const ItemListContainer = () => {
 
@@ -13,6 +14,7 @@ const ItemListContainer = () => {
     
     const { categoryId } = useParams();
 
+    
     useEffect( () => {
         const productsCollection = collection(db, 'products');
         const categoryQuery = categoryId && query(productsCollection, where("category", "==", categoryId));
@@ -27,14 +29,14 @@ const ItemListContainer = () => {
             })
             setListProducts(itemList);
         })
-        .catch( () => console.log("Error retrieving products"))
+        .catch( () => console.log("Error, retrieving products...."))
         .finally( () => setLoading(false) );
     }, [categoryId]);
     
     
     return(
         <div className='list-products'>
-            {loading ? <h2>Loading...</h2> : <ItemList dataProducts={listProducts}/>}
+            {loading ? <div className="loading"><PacmanLoader size={100} color="#f2ff00" margin={1} /><h2>Loading...</h2></div> : <ItemList dataProducts={listProducts}/>}
         </div>
     )
 }

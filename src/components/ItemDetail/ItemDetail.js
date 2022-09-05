@@ -27,10 +27,10 @@ const ItemDetail = ({item}) => {
 
             <div className="details">
                 <h2>{title}</h2>
-                <p>{description}</p>
-                <span>{price} $ ARS</span>
+                <p className="description">{description}</p>
+                <span>Price: {price} $ ARS</span>
                 {
-                    !quantitySelected ? <ItemCount onAdd={itemsAdded} stock={10} productData={item}/> : <button><Link to="/cart">FINISH PURCHASE</Link></button>
+                    !quantitySelected ? <ItemCount onAdd={itemsAdded} stock={10} productData={item}/> : <Link to="/cart"><button className="purchaseButton">FINISH PURCHASE</button></Link>
                 }
             </div>
             

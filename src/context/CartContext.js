@@ -2,9 +2,11 @@ import { createContext, useEffect, useState } from "react";
 
 const CartContext = createContext();
 
+const productFromLocalStorage = JSON.parse(localStorage.getItem("products") || "[]");
+
 const CartProvider = ({children}) => {
 
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState(productFromLocalStorage);
     const [productsQuantity, setProductsQuantity] = useState(0);
 
     const getProductsQuantity = () => {
@@ -17,6 +19,7 @@ const CartProvider = ({children}) => {
 
     useEffect( () => {
         getProductsQuantity();
+        localStorage.setItem("products", JSON.stringify(products));
     }, [products]);
 
     const addProductToCart = (product) => {

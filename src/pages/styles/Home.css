@@ -1,7 +1,116 @@
+.home{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../public/assets/img/background.png);
+    background-repeat: no-repeat;
+}
+
+.home h1,
+.home h2,
+.home p{
+    font-family: 'Mangat', sans-serif;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin: 10px;
+    padding: 10px 40px;
+}
+
+p{
+    margin: 10px;
+    padding: 10px 40px;
+}
+
+.home h1{
+    position: relative;
+    font-size: 80px;
+    left: 5%;
+    padding-top: 40px;
+    overflow: hidden;
+    width: 30%;
+    animation: flash 2s forwards infinite;
+}
+
 .carousel {
     position: relative;
     width: 80%;
     height: auto;
-    margin-top: 20px;
+    padding-top: 50px;
+    margin-bottom: 100px;
     left: 10%;
+    background: transparent;
+}
+
+.carousel img{
+    border-color: #000;
+    border-style: solid;
+    border-width: 7px;
+}
+
+.sectionOne,
+.sectionTwo,
+.sectionThree {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    background: transparent;
+    border-width: 40px;
+    border-color: #000;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.sectionOne p,
+.sectionTwo p,
+.sectionThree p {
+    background: transparent;
+    border-width: 5px;
+    border-color: #000;
+    border-radius: 70%;
+    border-style: solid;
+    text-align: center;
+}
+
+.sectionOne p {
+    padding: 100px 10px;
+    margin: 0px 190px;
+}
+
+.sectionTwo p {
+    padding: 100px 10px;
+    margin: 0px 190px;
+}
+
+.sectionThree p {
+    padding: 70px 10px;
+    margin: 0px 250px;
+}
+
+.section-img{
+    width: 500px;
+    height: 500px;
+    margin: 10px 20px;
+    border-color: #000;
+    border-style: solid;
+    border-width: 7px;
+}
+
+.sectionOne{
+    background-image: url(../../../public/assets/img/section-one-bg.png);
+    background-position: center center;
+}
+
+.sectionTwo{
+    background-image: url(../../../public/assets/img/section-two-bg.png);
+    background-position: center center;
+}
+
+.sectionThree{
+    background-image: url(../../../public/assets/img/section-three-bg.png);
+    background-position: center center;
 }
