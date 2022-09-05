@@ -7,7 +7,7 @@ const Home = () => {
         <div className="home">
             <h1>Welcome!</h1>
             <div className="carousel">
-            <Carousel cols={1} rows={1} gap={10}>
+            <Carousel cols={1} rows={1} gap={10} loop>
             <Carousel.Item>
                 <img width="100%" src="./assets/img/carousel-one.png" alt="img-one"/>
             </Carousel.Item>
