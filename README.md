@@ -9,10 +9,10 @@ We got a lot of variety from Dragon Ball Super to JoJo Part 7!
 
 # How to buy Mangas
 
-![manga](https://i.imgur.com/UAzg7hN.gif)
+![manga](https://github.com/fabrizinho113/mangaStore/blob/master/public/assets/gifs/manga-store%20Manga.gif)
 
 <br>
 
 # How to buy Light Novels
 
-![lightnovel](https://i.imgur.com/bgwA3JI.gif)
+![lightnovel](https://github.com/fabrizinho113/mangaStore/blob/master/public/assets/gifs/manga-store%20LN.gif)
